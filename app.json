@@ -1,0 +1,14 @@
+{
+	"name": "botgwcok",
+	"description": "WhatsApp Bot Using Lib Baileys",
+	"repository": "https://github.com/icontol/botgwcok",
+	"logo": "https://node-js-sample.herokuapp.com/node.png",
+	"keywords": [
+    "WhatsApp",
+    "Bot",
+    "WhatsApp",
+    "Api",
+    "Baileys"
+  ]
+}
+ 
