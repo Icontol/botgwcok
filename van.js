@@ -39,7 +39,7 @@ const esce = omlen
 const ini_kangbaned = `0@s.whatsapp.net`
 const ownernya = ownernomer + '@s.whatsapp.net'
 global.prem = require("./lib/premium")
-gambar = fs.readFileSync('./media/image/tio.jpg')
+gambar = fs.readFileSync('./media/image/van.jpg')
 //TIME
 const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')  
  if(time2 < "23:59:00"){
@@ -75,7 +75,7 @@ let tebaklirik = game.lirik = []
 let tebaktebakan = game.tebakan = []
 let vote = db.data.others.vote = []
 
-module.exports = tio = async (tio, m, chatUpdate, store) => {
+module.exports = van = async (van, m, chatUpdate, store) => {
     try {
         var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype == 'buttonsResponseMessage') ? m.message.buttonsResponseMessage.selectedButtonId : (m.mtype == 'listResponseMessage') ? m.message.listResponseMessage.singleSelectReply.selectedRowId : (m.mtype == 'templateButtonReplyMessage') ? m.message.templateButtonReplyMessage.selectedId : (m.mtype === 'messageContextInfo') ? (m.message.buttonsResponseMessage?.selectedButtonId || m.message.listResponseMessage?.singleSelectReply.selectedRowId || m.text) : ''
         var budy = (typeof m.text == 'string' ? m.text : '')
@@ -207,13 +207,13 @@ van.readMessages([m.key])
             key: m.key
           }})
         }
-        //Console logs by Van
+        //Console logs by van
    if (m.message) {
       	await console.log(chalk.black(chalk.bgRed('[ CMD ]')), chalk.black(chalk.bgGreen(new Date)), chalk.white(chalk.bgBlue(isCmd ? body : m.mtype || body.slice(0, 20))) + '\n' + chalk.black(chalk.bgCyan('[ ~> from ]')), chalk.black(chalk.bgWhite(pushname)), chalk.black(chalk.bgYellow(m.sender)) + '\n' + chalk.black(chalk.bgMagentaBright('[ ~> in ]')), chalk.black(chalk.bgYellow(m.isGroup ? pushname : 'Private Chat')), chalk.black(chalk.bgCyan(m.chat)))
 		  console.log('\n')      
             }               
 //Premium Exp
-prem.expiredCheck(tio, m, premium);
+prem.expiredCheck(van, m, premium);
                 
 //sticker url
 const sendStickerFromUrl = async(to, url) => {
@@ -278,13 +278,13 @@ m.reply(`${err}`)
 }
 }
              //Fake
-	        const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "status@broadcast"}, "message": {orderMessage: {itemCount: 2022,status: 200, thumbnail: await reSize(thumb, 100, 100), surface: 200, message: `${weem}`, orderTitle: 'Van', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+	        const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "status@broadcast"}, "message": {orderMessage: {itemCount: 2022,status: 200, thumbnail: await reSize(thumb, 100, 100), surface: 200, message: `${weem}`, orderTitle: 'van', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
 		const fdoc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {documentMessage: {title: `${weem}`,jpegThumbnail: await reSize(thumb, 100, 100)}}}
 		const fvn = {key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds":359996400,"ptt": "true"}} } 
 		const ftextt = {key: {fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})}, message: { "extendedTextMessage": {"text":`${weem}`, "title": `${botname}`, 'jpegThumbnail': await reSize(thumb, 100, 100)}}}
                 const ftoko = {key: {fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? {remoteJid: "status@broadcast" } : {})}, message: { "productMessage": { "product": { "productImage":{ "mimetype": "image/jpeg", "jpegThumbnail": await reSize(thumb, 100, 100)},"title": `${weem}`, "description": `${botname}`, "currencyCode": "IDR", "priceAmount1000": "1000000000000000000", "retailerId": `${weem}`, "productImageCount": 1}, "businessOwnerJid": `0@s.whatsapp.net`}}} 
 		const fgif = {key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: {"videoMessage": { "title":`${weem}`, "h": `Hmm`,'seconds': '359996400', 'gifPlayback': 'true', 'caption': `${weem}`, 'jpegThumbnail': await reSize(thumb, 100, 100)}}}
-		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": `${weem}`, "caption": `${weem}`, 'jpegThumbnail': await reSize(thumb, 100, 100)}}}
+		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": `${weem}`, "capvann": `${weem}`, 'jpegThumbnail': await reSize(thumb, 100, 100)}}}
 		const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) },message: { "videoMessage": { "title":`${weem}`, "h": `Hmm`,'seconds': '359996400', 'caption': `${weem}`, 'jpegThumbnail': await reSize(thumb, 100, 100)}}}
 		const floc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: `${weem}`,jpegThumbnail: await reSize(thumb, 100, 100)}}}
 		const floc2 = {key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) }, message: { "liveLocationMessage": { "title": `${weem}`,"h": `Hmm`, 'jpegThumbnail': await reSize(thumb, 100, 100)}}}
@@ -934,7 +934,7 @@ break
             }
             break
             case 'gbtku': {
-            if (!isPremium) throw mess.premium
+            if (!isPremium) throw mess.premime
 			if (!text) throw `Example : ${prefix + command} hai|halo`
             let jawab = `${text.split("|")[0]}`
             let buttons = [{ buttonId: 'menu', buttonText: { displayText: `` }, type: 1 }]
@@ -1001,14 +1001,14 @@ break
                     }
 					break
 			case 'ganteng': case 'gantengcek': case 'handsome': case 'handsomecheck': {
-				    if (!text) return m.reply(`Tag Someone, Example : ${prefix + command} Van`)
+				    if (!text) return m.reply(`Tag Someone, Example : ${prefix + command} van`)
 					const ra = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const te = ra[Math.floor(Math.random() * ra.length)]
                     van.sendMessage(m.chat, { text: `Cek Ganteng : ${text}\nRate Bot : *${te}%*` }, { quoted: m })
                     }
 					break
 			case 'cantik': case 'cantikcek': case 'beautiful': case 'beautifulcheck': {
-				    if (!text) return m.reply(`Tag Someone, Example : ${prefix + command} Van`)
+				    if (!text) return m.reply(`Tag Someone, Example : ${prefix + command} van`)
 					const ra = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const te = ra[Math.floor(Math.random() * ra.length)]
                     van.sendMessage(m.chat, { text: `Cek Cantik : ${text}\nRate Bot : *${te}%*` }, { quoted: m })
@@ -1108,7 +1108,7 @@ break
             }
             break  
             case 'join': {
-                if (!isPremium) throw mess.premium
+                if (!isPremium) throw mess.premime
                 if (!text) throw 'Masukkan Link Group!'
                 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) throw 'Link Invalid!'
                 m.reply(mess.wait)
@@ -1293,7 +1293,7 @@ break
             }
             break
 	    case 'style': case 'styletext': {
-	        if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.enteklmt) // respon ketika limit habis
+	        if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // respon ketika limit habis
 		db.data.users[m.sender].limit -= 1 // -1 limit
 		let { styletext } = require('./lib/scraper')
 		if (!text) throw 'Masukkan Query text!'
@@ -2886,7 +2886,7 @@ break
             }
             break
             case 'ramalanjodoh': case 'ramaljodoh': {
-                if (!text) throw `Example : ${prefix + command} Van, 7, 7, 2005, Novia, 16, 11, 2004`
+                if (!text) throw `Example : ${prefix + command} van, 7, 7, 2005, Novia, 16, 11, 2004`
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return m.reply(anu.message)
@@ -2894,7 +2894,7 @@ break
             }
             break
             case 'ramalanjodohbali': case 'ramaljodohbali': {
-                if (!text) throw `Example : ${prefix + command} Van, 7, 7, 2005, Novia, 16, 11, 2004`
+                if (!text) throw `Example : ${prefix + command} van, 7, 7, 2005, Novia, 16, 11, 2004`
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh_bali(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return m.reply(anu.message)
@@ -2902,7 +2902,7 @@ break
             }
             break
             case 'suamiistri': {
-                if (!text) throw `Example : ${prefix + command} Van, 7, 7, 2005, Novia, 16, 11, 2004`
+                if (!text) throw `Example : ${prefix + command} van, 7, 7, 2005, Novia, 16, 11, 2004`
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.suami_istri(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return m.reply(anu.message)
@@ -2910,7 +2910,7 @@ break
             }
             break
             case 'ramalancinta': case 'ramalcinta': {
-                if (!text) throw `Example : ${prefix + command} Van, 7, 7, 2005, Novia, 16, 11, 2004`
+                if (!text) throw `Example : ${prefix + command} van, 7, 7, 2005, Novia, 16, 11, 2004`
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_cinta(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return m.reply(anu.message)
@@ -2918,14 +2918,14 @@ break
             }
             break
             case 'artinama': {
-                if (!text) throw `Example : ${prefix + command} Van`
+                if (!text) throw `Example : ${prefix + command} van Ardianta`
                 let anu = await primbon.arti_nama(text)
                 if (anu.status == false) return m.reply(anu.message)
                 van.sendText(m.chat, ` *»* *Nama :* ${anu.message.nama}\n *»* *Arti :* ${anu.message.arti}\n *»* *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'kecocokannama': case 'cocoknama': {
-                if (!text) throw `Example : ${prefix + command} Van, 7, 7, 2005`
+                if (!text) throw `Example : ${prefix + command} van, 7, 7, 2005`
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.kecocokan_nama(nama, tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
@@ -2997,7 +2997,7 @@ break
             }
             break
             case 'fengshui': {
-                if (!text) throw `Example : ${prefix + command} Van,1,2005\n\nNote : ${prefix + command} Nama, gender, tahun lahir\nGender : 1 untuk laki-laki & 2 untuk perempuan`
+                if (!text) throw `Example : ${prefix + command} van,1,2005\n\nNote : ${prefix + command} Nama, gender, tahun lahir\nGender : 1 untuk laki-laki & 2 untuk perempuan`
                 let [nama, gender, tahun] = text.split`,`
                 let anu = await primbon.perhitungan_feng_shui(nama, gender, tahun)
                 if (anu.status == false) return m.reply(anu.message)
@@ -3045,7 +3045,7 @@ break
             }
             break
             case 'peruntungan': {
-                if (!text) throw `Example : ${prefix + command} Van,7,7,2005,2022\n\nNote : ${prefix + command} Nama, tanggal lahir, bulan lahir, tahun lahir, untuk tahun`
+                if (!text) throw `Example : ${prefix + command} van,7,7,2005,2022\n\nNote : ${prefix + command} Nama, tanggal lahir, bulan lahir, tahun lahir, untuk tahun`
                 let [nama, tgl, bln, thn, untuk] = text.split`,`
                 let anu = await primbon.ramalan_peruntungan(nama, tgl, bln, thn, untuk)
                 if (anu.status == false) return m.reply(anu.message)
@@ -3061,7 +3061,7 @@ break
             }
             break
             case 'sifat': case 'karakter': {
-                if (!text) throw `Example : ${prefix + command} Van, 7,7,2005`
+                if (!text) throw `Example : ${prefix + command} van, 7,7,2005`
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.sifat_karakter_tanggal_lahir(nama, tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
@@ -3069,7 +3069,7 @@ break
             }
             break
             case 'keberuntungan': {
-                if (!text) throw `Example : ${prefix + command} Van, 7,7,2005`
+                if (!text) throw `Example : ${prefix + command} van, 7,7,2005`
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.potensi_keberuntungan(nama, tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
@@ -3632,7 +3632,7 @@ let alfamart = `628111500959@s.whatsapp.net`
   showAdAttribution: true,
   thumbnail: thumb,
   mediaType: 2,
-  mediaUrl: gc,
+  mediaUrl: ghme,
   sourceUrl: webmy
   }}
   }
